@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Overtime</string>
+    <string name="_minus30">-30</string>
+    <string name="_minus60">-60</string>
+    <string name="_plus30">+30</string>
+    <string name="_plus60">+60</string>
+    <string name="saveButton">SAVE</string>
+    <string name="textview">0 min</string>
+</resources>
