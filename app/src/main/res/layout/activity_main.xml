@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="264dp"
         android:layout_marginLeft="264dp"
+        android:onClick="plus30ButtonClicked"
         android:text="@string/_plus30"
         app:layout_constraintBottom_toTopOf="@+id/plus60"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +26,7 @@
         android:layout_marginStart="264dp"
         android:layout_marginLeft="264dp"
         android:layout_marginBottom="404dp"
+        android:onClick="plus60ButtonClicked"
         android:text="@string/_plus60"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -36,6 +38,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginBottom="404dp"
+        android:onClick="minus60ButtonClicked"
         android:text="@string/_minus60"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -47,6 +50,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginBottom="124dp"
+        android:onClick="minus30ButtonClicked"
         android:text="@string/_minus30"
         app:layout_constraintBottom_toTopOf="@+id/minus60"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,24 +61,35 @@
         android:id="@+id/saveTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="232dp"
+        android:onClick="saveTime"
         android:text="@string/saveButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/overtimeOutputField"
         android:layout_width="105dp"
         android:layout_height="69dp"
         android:gravity="center"
         android:text="@string/textview"
         app:layout_constraintBottom_toTopOf="@+id/saveTime"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+        app:layout_constraintVertical_bias="0.942" />
+
+    <TextView
+        android:id="@+id/finalValueField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveTime"
+        app:layout_constraintVertical_bias="0.361" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
